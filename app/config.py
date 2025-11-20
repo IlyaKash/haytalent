@@ -13,6 +13,11 @@ class Settings(BaseSettings):
     DB_NAME: str
     DB_USER: str
     DB_PASS: str
+    TEST_DB_HOST: str
+    TEST_DB_PORT: int
+    TEST_DB_NAME: str
+    TEST_DB_USER: str
+    TEST_DB_PASS: str
     model_config=SettingsConfigDict(
         env_file=dotenv_path
     )
